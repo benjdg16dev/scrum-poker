@@ -1,0 +1,56 @@
+@import "../../../assets/color.scss";
+
+.sp-header {
+  background: linear-gradient(135deg, #f05f57 10%, #360940 100%);
+  //   background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+  color: white;
+  display: flex;
+
+  .sp-header-toolbar {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .sp-header-left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .sp-header-title {
+        margin-right: 32px;
+        h1 {
+          margin: 0;
+          font-weight: 400;
+          font-size: 24px;
+        }
+      }
+
+      .sp-header-links {
+        a {
+          color: white;
+          font-size: 16px;
+          text-decoration: none;
+          margin: 0 8px;
+          padding: 8px;
+
+          &:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+
+    .sp-header-right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
