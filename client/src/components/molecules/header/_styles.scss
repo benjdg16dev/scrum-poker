@@ -1,7 +1,8 @@
 @import "../../../assets/color.scss";
 
 .sp-header {
-  background: linear-gradient(135deg, #f05f57 10%, #360940 100%);
+  background-color: #333951;
+  // background: linear-gradient(135deg, #f05f57 10%, #360940 100%);
   //   background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
   color: white;
   display: flex;
@@ -24,6 +25,7 @@
       .sp-header-title {
         margin-right: 32px;
         h1 {
+          // font-family: "Lobster", cursive;
           margin: 0;
           font-weight: 400;
           font-size: 24px;
@@ -34,6 +36,7 @@
         a {
           color: white;
           font-size: 16px;
+          font-weight: 300;
           text-decoration: none;
           margin: 0 8px;
           padding: 8px;
