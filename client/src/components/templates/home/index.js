@@ -5,9 +5,20 @@ import Header from "../../molecules/header";
 import Content from "../../organisms/content";
 
 import InputBox from "../../atoms/input-box";
-import { Input } from "@material-ui/core";
+
+import Dropdown from "../../atoms/dropdown";
 
 const HomeTemplate = () => {      
+    const options = [
+        {
+            id: 0,
+            value: "Alpha"
+        },
+        {
+            id: 1,
+            value: "Beta"
+        }
+    ];
     return (
         <React.Fragment>
             <Header />
@@ -19,6 +30,7 @@ const HomeTemplate = () => {
                     labelText="Sample ID"
                     placeholder="opu"
                 />
+                <Dropdown onChange={() => console.log("hello")} data={options} label="hello" id="l" labelText="SampleDD" />
             </div>
         </React.Fragment>
     )
